@@ -1,0 +1,65 @@
+.testimonials{
+  background:#1f6b0a;
+  padding:60px 0;
+  font-family:"Poppins", sans-serif;
+}
+
+.testimonialContainer{
+  max-width:1200px;
+  margin:auto;
+}
+
+.testimonialTitle{
+  text-align:center;
+  color:#fff;
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:40px;
+}
+
+/* grid */
+
+.testimonialGrid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+/* card */
+
+.testimonialCard{
+  background:#f2f2f2;
+  padding:20px;
+  border-radius:4px;
+}
+
+/* stars */
+
+.stars{
+  color:#2f5cff;
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+/* text */
+
+.testimonialText{
+  font-size:14px;
+  line-height:1.6;
+  color:#333;
+  margin-bottom:15px;
+}
+
+/* name */
+
+.testimonialName{
+  font-weight:600;
+  font-size:14px;
+}
+
+/* location */
+
+.testimonialLocation{
+  font-size:12px;
+  color:#777;
+}

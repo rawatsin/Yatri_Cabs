@@ -1,0 +1,128 @@
+.footer-container {
+  background: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-md);
+  font-family: var(--font-primary);
+  box-sizing: border-box;
+}
+
+.footer-logo-wrapper {
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo-wrapper img {
+  width: 100px;
+  height: auto;
+  transition: var(--transition-base);
+}
+
+.footer-logo-wrapper img:hover {
+  opacity: 0.8;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  font-size: var(--font-size-xs);
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer-link {
+  cursor: pointer;
+  transition: var(--transition-base);
+  color: var(--color-light);
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.footer-copyright-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-dark);
+  margin: 0;
+  padding: var(--spacing-md) 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+  }
+
+  .footer-logo-wrapper {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .footer-logo-wrapper img {
+    width: 120px;
+  }
+
+  .footer-links-container {
+    gap: var(--spacing-lg);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .footer-copyright-text {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-container {
+    padding: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .footer-logo-wrapper {
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .footer-logo-wrapper img {
+    width: 140px;
+  }
+
+  .footer-links-container {
+    gap: var(--spacing-xl);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .footer-copyright-text {
+    font-size: var(--font-size-base);
+    padding-top: var(--spacing-lg);
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .footer-container {
+    padding: var(--spacing-3xl) var(--spacing-2xl);
+  }
+
+  .footer-logo-wrapper {
+    margin-bottom: var(--spacing-3xl);
+  }
+
+  .footer-logo-wrapper img {
+    width: 150px;
+  }
+
+  .footer-logo-wrapper img:hover {
+    transform: scale(1.05);
+  }
+
+  .footer-links-container {
+    gap: var(--spacing-2xl);
+  }
+
+  .footer-link:hover {
+    transform: translateY(-2px);
+  }
+}

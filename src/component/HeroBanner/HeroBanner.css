@@ -1,0 +1,119 @@
+.hero-banner-wrapper {
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 100%;
+  background: var(--color-gray-light);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+.hero-banner-section {
+  text-align: center;
+  width: 100%;
+}
+
+.hero-banner-section-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-gray-medium);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.hero-banner-section-text {
+  font-size: var(--font-size-sm);
+  margin: 0;
+  color: var(--color-gray-dark);
+}
+
+.hero-banner-center-title {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-gray-medium);
+}
+
+.hero-banner-stores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner-stores img {
+  height: 40px;
+  width: auto;
+}
+
+.hero-banner-divider {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero-banner-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: -70px;
+    width: 87%;
+    padding: var(--spacing-xl);
+    gap: var(--spacing-lg);
+  }
+
+  .hero-banner-section {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .hero-banner-section-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .hero-banner-section-text {
+    font-size: var(--font-size-base);
+  }
+
+  .hero-banner-stores {
+    gap: var(--spacing-md);
+  }
+
+  .hero-banner-stores img {
+    height: 50px;
+  }
+
+  .hero-banner-divider {
+    display: block;
+    width: 1px;
+    height: 80px;
+    background: var(--color-gray-dark);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-banner-wrapper {
+    width: 85%;
+    padding: var(--spacing-2xl);
+  }
+
+  .hero-banner-section {
+    padding: 0 var(--spacing-lg);
+  }
+
+  .hero-banner-section-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero-banner-section-text {
+    font-size: var(--font-size-base);
+  }
+
+  .hero-banner-stores img {
+    height: 60px;
+  }
+
+  .hero-banner-divider {
+    height: 100px;
+  }
+}

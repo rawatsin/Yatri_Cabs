@@ -1,0 +1,73 @@
+.whyYatriSection{
+  background:#f5f5f5;
+  padding:80px 0;
+  font-family:"Poppins",sans-serif;
+}
+
+.whyYatriContainer{
+  max-width:1200px;
+  margin:auto;
+}
+
+.whyYatriTitle{
+  text-align:center;
+  font-size:48px;
+  font-weight:800;
+  color:#5a5a5a;
+  margin-bottom:60px;
+}
+
+.whyYatriTitleHighlight{
+  color:#1f6b0a;
+}
+
+.whyYatriGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:40px;
+}
+
+.whyYatriCarSection{
+  display:flex;
+  justify-content:center;
+}
+
+.whyYatriCarImage{
+  max-width:100%;
+  height:auto;
+}
+
+.whyYatriFeatures{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+.whyYatriFeatureItem{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+
+.whyYatriFeatureIcon{
+  flex-shrink:0;
+}
+
+.whyYatriFeatureContent{
+  display:flex;
+  flex-direction:column;
+}
+
+.whyYatriFeatureTitle{
+  font-size:18px;
+  font-weight:700;
+  color:#1f6b0a;
+  margin-bottom:6px;
+}
+
+.whyYatriFeatureText{
+  font-size:14px;
+  color:#6b6b6b;
+  line-height:1.6;
+}
