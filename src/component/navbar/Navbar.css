@@ -1,76 +1,65 @@
-.navbar-container {
+.ycNavbar {
   width: 100%;
-  height: 100%;
+  height: 80px;
   display: flex;
   align-items: center;
-  padding: 0 var(--spacing-md);
+  padding-left: 60px;
+  padding-right: 60px;
   background: var(--color-gray-light);
   position: relative;
   box-sizing: border-box;
-  gap: var(--spacing-md);
 }
 
-.navbar-container {
-  min-height: 70px;
-}
-
-.navbar-logo {
+.ycNavbarLogo {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 }
 
-.navbar-logo img {
-  width: 100px;
+.ycNavbarLogoImg {
+  width: 150px;
   height: auto;
 }
 
-.navbar-contact-bar {
-  display: none;
+.ycNavbarCenterContact {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  align-items: center;
 }
 
-.navbar-contact-bar img {
-  width: 200px;
+.ycNavbarCenterContactImg {
+  width: 260px;
   height: auto;
 }
 
-.navbar-icons-container {
+.ycNavbarRightSection {
+  margin-left: auto;
   display: flex;
   align-items: center;
-  margin-left: auto;
-  gap: var(--spacing-md);
-  flex-wrap: nowrap;
+  gap: 28px;
 }
 
-.navbar-download-icon {
-  width: 40px;
-  height: 40px;
+.ycNavbarDownloadIcon {
+  width: 100px;
+  height: 45px;
   cursor: pointer;
-  flex-shrink: 0;
-  transition: var(--transition-base);
+  transition: 0.2s ease;
 }
 
-.navbar-download-icon:hover {
+.ycNavbarDownloadIcon:hover {
   opacity: 0.8;
 }
 
-.navbar-user-section {
+.ycNavbarUserBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: 4px;
   cursor: pointer;
-  transition: var(--transition-base);
 }
 
-.navbar-user-section:hover {
-  opacity: 0.8;
-}
-
-.navbar-user-avatar {
+.ycNavbarUserAvatar {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -79,108 +68,16 @@
   justify-content: center;
 }
 
-.navbar-user-avatar img {
+.ycNavbarUserAvatarImg {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  object-fit: cover;
+  background-color: rgb(13, 128, 13);
 }
 
-.navbar-user-greeting {
-  font-size: var(--font-size-xs);
+.ycNavbarUserText {
+  font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
-  color: var(--color-foreground);
-}
-
-@media (min-width: 768px) {
-  .navbar-container {
-    padding: 0 var(--spacing-lg);
-    min-height: 75px;
-  }
-
-  .navbar-logo img {
-    width: 120px;
-  }
-
-  .navbar-contact-bar {
-    display: block;
-  }
-
-  .navbar-contact-bar img {
-    width: 220px;
-  }
-
-  .navbar-icons-container {
-    gap: var(--spacing-lg);
-  }
-
-  .navbar-download-icon {
-    width: 45px;
-    height: 45px;
-  }
-
-  .navbar-user-greeting {
-    font-size: var(--font-size-sm);
-  }
-}
-
-@media (min-width: 1024px) {
-  .navbar-container {
-    padding: 0 var(--spacing-xl);
-    min-height: 80px;
-  }
-
-  .navbar-logo img {
-    width: 140px;
-  }
-
-  .navbar-contact-bar img {
-    width: 250px;
-  }
-
-  .navbar-icons-container {
-    gap: var(--spacing-xl);
-  }
-
-  .navbar-download-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .navbar-user-greeting {
-    font-size: var(--font-size-base);
-  }
-}
-
-@media (min-width: 1400px) {
-  .navbar-container {
-    padding: 0 var(--spacing-2xl);
-  }
-
-  .navbar-logo img {
-    width: 150px;
-  }
-
-  .navbar-contact-bar img {
-    width: 280px;
-  }
-
-  .navbar-icons-container {
-    gap: var(--spacing-2xl);
-  }
-
-  .navbar-download-icon:hover {
-    transform: scale(1.05);
-  }
-
-  .navbar-user-section:hover {
-    transform: scale(1.05);
-  }
-}
-
-@media (min-width: 1600px) {
-  .navbar-container {
-    padding: 0 var(--spacing-3xl);
-  }
+  color: black;
 }

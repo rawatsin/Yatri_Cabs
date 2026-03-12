@@ -51,56 +51,6 @@
   padding: var(--spacing-md) 0 0 0;
 }
 
-@media (min-width: 768px) {
-  .footer-container {
-    padding: var(--spacing-2xl) var(--spacing-lg);
-  }
-
-  .footer-logo-wrapper {
-    margin-bottom: var(--spacing-xl);
-  }
-
-  .footer-logo-wrapper img {
-    width: 120px;
-  }
-
-  .footer-links-container {
-    gap: var(--spacing-lg);
-    font-size: var(--font-size-sm);
-    margin-bottom: var(--spacing-xl);
-  }
-
-  .footer-copyright-text {
-    font-size: var(--font-size-sm);
-  }
-}
-
-@media (min-width: 1024px) {
-  .footer-container {
-    padding: var(--spacing-2xl) var(--spacing-xl);
-  }
-
-  .footer-logo-wrapper {
-    margin-bottom: var(--spacing-2xl);
-  }
-
-  .footer-logo-wrapper img {
-    width: 140px;
-  }
-
-  .footer-links-container {
-    gap: var(--spacing-xl);
-    font-size: var(--font-size-base);
-    margin-bottom: var(--spacing-2xl);
-  }
-
-  .footer-copyright-text {
-    font-size: var(--font-size-base);
-    padding-top: var(--spacing-lg);
-  }
-}
-
-
 @media (min-width: 1400px) {
   .footer-container {
     padding: var(--spacing-3xl) var(--spacing-2xl);

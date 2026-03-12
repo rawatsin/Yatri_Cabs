@@ -3,10 +3,11 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="navbar-container">
+    <nav className="ycNavbar">
 
-      <div className="navbar-logo">
+      <div className="ycNavbarLogo">
         <Image
+          className="ycNavbarLogoImg"
           src="/logo.png"
           alt="YatriCabs Logo"
           width={150}
@@ -14,8 +15,9 @@ export default function Navbar() {
         />
       </div>
 
-      <div className="navbar-contact-bar">
+      <div className="ycNavbarCenterContact">
         <Image
+          className="ycNavbarCenterContactImg"
           src="/IMAGES/centerLogo.png"
           alt="24/7 contact"
           width={250}
@@ -23,25 +25,27 @@ export default function Navbar() {
         />
       </div>
 
-      <div className="navbar-icons-container">
+      <div className="ycNavbarRightSection">
         <Image
-          className="navbar-download-icon"
+          className="ycNavbarDownloadIcon"
           src="/downloadApp.png"
           alt="download"
-          width={45}
+          width={75}
           height={45}
         />
 
-        <div className="navbar-user-section">
-          <div className="navbar-user-avatar">
+        <div className="ycNavbarUserBox">
+          <div className="ycNavbarUserAvatar">
             <Image
+              className="ycNavbarUserAvatarImg"
               src="/profileCircle.png"
               alt="profile"
               width={36}
               height={36}
             />
           </div>
-          <span className="navbar-user-greeting">Hi, Ravi</span>
+
+          <span className="ycNavbarUserText">Hi, Ravi</span>
         </div>
       </div>
 

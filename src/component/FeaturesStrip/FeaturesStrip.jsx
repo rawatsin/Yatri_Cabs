@@ -6,7 +6,7 @@ const FeaturesStrip = () => {
     <section className="features-strip-container">
       <div className="features-strip-grid">
 
-        {/* Feature 1 */}
+        
         <div className="features-strip-item">
           <Image
             src="/Group 1000001863.png"
@@ -24,15 +24,15 @@ const FeaturesStrip = () => {
           </p>
         </div>
 
-        {/* Divider */}
+        
         <div className="features-strip-divider" />
 
-        {/* Feature 2 */}
+        
         <div className="features-strip-item">
           <Image
             src="/Group 1686551829.png"
             alt="GPS Billing"
-            width={80}
+            width={60}
             height={80}
           />
 
@@ -45,15 +45,15 @@ const FeaturesStrip = () => {
           </p>
         </div>
 
-        {/* Divider */}
+      
         <div className="features-strip-divider" />
 
-        {/* Feature 3 */}
+       
         <div className="features-strip-item">
           <Image
             src="/driving.png"
             alt="Routes"
-            width={80}
+            width={70}
             height={80}
           />
 

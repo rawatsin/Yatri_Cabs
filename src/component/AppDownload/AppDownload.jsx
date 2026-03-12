@@ -9,13 +9,13 @@ const AppDownload = () => {
         <div className="app-download-left">
 
           <div className="app-download-phones">
-            <Image src="/Group 1686552011.png" alt="phone" width={120} height={220}/>
+            <Image src="/Group 1686552011.png" alt="phone" width={200} height={400}/>
             
           </div>
 
           <div className="app-download-text">
             <h2>
-              GET YOUR <span className="app-download-text-highlight">YATRI CABS</span> APP NOW!
+              GET YOUR <br /><span className="app-download-text-highlight">YATRI CABS</span> <br /> APP NOW!
             </h2>
 
             <p>
@@ -33,11 +33,10 @@ const AppDownload = () => {
 
         </div>
 
-        {/* DIVIDER */}
+        
         <div className="app-download-divider"></div>
 
-        {/* RIGHT SIDE */}
-
+        
         <div className="app-download-right">
           <h2>
             BECOME A <span className="app-download-text-highlight">DRIVER</span> PARTNER
@@ -55,8 +54,6 @@ const AppDownload = () => {
         </div>
 
       </div>
-
-      {/* Cities */}
 
       <div className="cities">
         <strong>Operational Cities :</strong>
