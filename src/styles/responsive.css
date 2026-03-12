@@ -55,17 +55,7 @@
   padding: 0 var(--spacing-md);
 }
 
-@media (min-width: 768px) {
-  .container-max-width {
-    padding: 0 var(--spacing-lg);
-  }
-}
 
-@media (min-width: 1024px) {
-  .container-max-width {
-    padding: 0 var(--spacing-xl);
-  }
-}
 
 .flex-center {
   display: flex;
@@ -118,11 +108,7 @@
 .section-padding-mobile {
 }
 
-@media (min-width: 768px) {
-  .section-padding-tablet {
-    padding: var(--spacing-2xl) var(--spacing-lg);
-  }
-}
+
 
 @media (min-width: 1024px) {
   .section-padding-desktop {
@@ -130,39 +116,6 @@
   }
 }
 
-/* ============================================================================
-   HIDDEN ON SPECIFIC SCREENS
-}
-
-@media (min-width: 768px) {
-  .hide-mobile {
-    display: block;
-  }
-
-  .hide-tablet {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hide-tablet {
-    display: block;
-  }
-
-  .hide-desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hide-desktop {
-    display: block;
-  }
-}
-
-/* ============================================================================
-   RESPONSIVE IMAGE WRAPPER
-   ============================================================================ */
 
 .image-wrapper {
   position: relative;
@@ -175,10 +128,6 @@
   height: auto;
   display: block;
 }
-
-/* ============================================================================
-   RESPONSIVE BUTTON
-   ============================================================================ */
 
 .btn {
   display: inline-block;
@@ -208,9 +157,6 @@
   }
 }
 
-/* ============================================================================
-   RESPONSIVE FORM ELEMENTS
-   ============================================================================ */
 
 .form-control {
   width: 100%;

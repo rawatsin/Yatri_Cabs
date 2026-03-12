@@ -30,37 +30,7 @@
   color: var(--color-gray-medium);
 }
 
-@media (min-width: 768px) {
-  .services-section-container {
-    padding: var(--spacing-2xl) var(--spacing-lg);
-  }
 
-  .services-section-title {
-    font-size: var(--font-size-3xl);
-    margin-bottom: var(--spacing-xl);
-  }
-
-  .services-section-description {
-    max-width: 900px;
-    font-size: var(--font-size-base);
-  }
-}
-
-@media (min-width: 1024px) {
-  .services-section-container {
-    padding: var(--spacing-3xl) var(--spacing-xl);
-  }
-
-  .services-section-title {
-    font-size: var(--font-size-3xl);
-    margin-bottom: var(--spacing-2xl);
-  }
-
-  .services-section-description {
-    max-width: 1100px;
-    font-size: var(--font-size-lg);
-  }
-}
 
 @media (min-width: 1400px) {
   .services-section-container {

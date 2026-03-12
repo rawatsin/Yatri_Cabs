@@ -6,7 +6,7 @@ const JourneySection = () => {
     <section className="journeySection">
       <div className="journeyContainer">
 
-        {/* LEFT TEXT */}
+
         <div className="journeyTextContainer">
           <h2 className="journeyTitle">
             WHY CHOOSE AC BUS OR AC TRAIN <br />
@@ -29,7 +29,7 @@ const JourneySection = () => {
           </p>
         </div>
 
-        {/* RIGHT IMAGE */}
+
         <div className="journeyImageContainer">
           <Image
             src="/image_processing20200705-14536-p3d6n5 1.png"

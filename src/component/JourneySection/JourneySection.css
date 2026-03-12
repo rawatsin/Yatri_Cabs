@@ -14,14 +14,11 @@
   align-items:center;
 }
 
-/* TEXT */
-
 .journeyTextContainer{
   display:flex;
   flex-direction:column;
 }
 
-/* TITLE */
 
 .journeyTitle{
   font-size:30px;
@@ -35,7 +32,6 @@
   color:#2b6b0f;
 }
 
-/* DESCRIPTION */
 
 .journeyDescription{
   font-size:15px;
@@ -43,7 +39,6 @@
   color:#555;
 }
 
-/* IMAGE */
 
 .journeyImageContainer{
   display:flex;

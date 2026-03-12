@@ -12,8 +12,7 @@ import Testimonials from "@/component/Testimonials/Testimonials";
 import TravelOptions from "@/component/TravelOptions/TravelOptions";
 import WhyOneWay from "@/component/WhyOneWay/WhyOneWay";
 import WhyYatri from "@/component/WhyYatri/WhyYatri";
-import { Explora } from "next/font/google";
-import Image from "next/image";
+
 
 export default function Home() {
   return (

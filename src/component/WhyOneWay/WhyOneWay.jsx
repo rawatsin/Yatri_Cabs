@@ -10,7 +10,7 @@ const WhyOneWay = () => {
 
         <div className="onewayGrid">
 
-          {/* LEFT BOX */}
+         
           <div className="onewayInfoBox">
             <ul className="onewayList">
               <li className="onewayListItem">Instant Booking & Confirmation</li>
@@ -23,7 +23,7 @@ const WhyOneWay = () => {
             </ul>
           </div>
 
-          {/* CENTER IMAGE */}
+          
           <div className="onewayCenterImage">
             <Image
               src="/d43c11d76c7db33af616426597e88833 2.png"
@@ -34,7 +34,7 @@ const WhyOneWay = () => {
             />
           </div>
 
-          {/* RIGHT BOX */}
+         
           <div className="onewayInfoBox">
             <ul className="onewayList">
               <li className="onewayListItem">Pick-Up From Your House</li>
@@ -51,7 +51,7 @@ const WhyOneWay = () => {
 
         </div>
 
-        {/* Bottom text */}
+     
 
         <p className="onewayBottomText">
           DISCOVER AFFORDABLE TRAVEL WITH OUR SEAMLESS

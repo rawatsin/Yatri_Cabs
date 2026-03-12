@@ -9,7 +9,7 @@
   margin:auto;
 }
 
-/* green title bar */
+
 
 .benefitsTitle{
   background:#1f6b0a;
@@ -24,7 +24,6 @@
   margin-bottom:15px;
 }
 
-/* grey box */
 
 .benefitsBox{
   background:#efefef;
@@ -32,15 +31,13 @@
   border-radius:8px;
 }
 
-/* intro paragraph */
-
 .benefitsIntro{
   font-size:15px;
   color:#555;
   margin-bottom:15px;
 }
 
-/* list */
+
 
 .benefitsList{
   padding-left:18px;
