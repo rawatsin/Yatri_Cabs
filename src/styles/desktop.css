@@ -1,0 +1,771 @@
+/* Desktop-Only Responsive CSS (≥1200px) */
+/* v0 Yatri Cabs - Plain CSS Styling */
+
+/* ===== VARIABLES & COLORS ===== */
+:root {
+  --v0-primary: #FF6B35;
+  --v0-secondary: #004E89;
+  --v0-accent: #F7B801;
+  --v0-dark: #1A1A1A;
+  --v0-light: #F5F5F5;
+  --v0-white: #FFFFFF;
+  --v0-gray: #808080;
+  --v0-radius: 8px;
+  --v0-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: var(--v0-dark);
+  background-color: var(--v0-white);
+  line-height: 1.6;
+}
+
+@media (min-width: 1200px) {
+  /* ===== NAVBAR ===== */
+  .v0-desktop-navbar {
+    position: sticky;
+    top: 0;
+    background: var(--v0-white);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 1000;
+    padding: 0;
+  }
+
+  .v0-desktop-navbar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+
+  .v0-desktop-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--v0-secondary);
+  }
+
+  .v0-desktop-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex: 1;
+    margin-left: 60px;
+  }
+
+  .v0-desktop-nav-links a {
+    text-decoration: none;
+    color: var(--v0-dark);
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+
+  .v0-desktop-nav-links a:hover {
+    color: var(--v0-primary);
+  }
+
+  .v0-desktop-btn-nav {
+    background: var(--v0-primary);
+    color: var(--v0-white);
+    border: none;
+    padding: 10px 24px;
+    border-radius: var(--v0-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .v0-desktop-btn-nav:hover {
+    background: #E55A2B;
+    transform: translateY(-2px);
+    box-shadow: var(--v0-shadow);
+  }
+
+  /* ===== HERO SECTION ===== */
+  .v0-desktop-hero {
+    background: linear-gradient(135deg, var(--v0-secondary) 0%, #0066B3 100%);
+    color: var(--v0-white);
+    padding: 120px 40px;
+    text-align: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .v0-desktop-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .v0-desktop-hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+  }
+
+  .v0-desktop-hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+  }
+
+  .v0-desktop-hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  /* ===== BUTTONS ===== */
+  .v0-desktop-btn-primary {
+    background: var(--v0-primary);
+    color: var(--v0-white);
+    border: none;
+    padding: 14px 32px;
+    border-radius: var(--v0-radius);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .v0-desktop-btn-primary:hover {
+    background: #E55A2B;
+    transform: translateY(-3px);
+    box-shadow: var(--v0-shadow);
+  }
+
+  .v0-desktop-btn-secondary {
+    background: transparent;
+    color: var(--v0-white);
+    border: 2px solid var(--v0-white);
+    padding: 12px 32px;
+    border-radius: var(--v0-radius);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .v0-desktop-btn-secondary:hover {
+    background: var(--v0-white);
+    color: var(--v0-secondary);
+  }
+
+  .v0-desktop-btn-tertiary {
+    background: var(--v0-accent);
+    color: var(--v0-dark);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--v0-radius);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .v0-desktop-btn-tertiary:hover {
+    background: #F0B000;
+    transform: scale(1.05);
+  }
+
+  .v0-desktop-btn-micro {
+    background: var(--v0-primary);
+    color: var(--v0-white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .v0-desktop-btn-micro:hover {
+    background: #E55A2B;
+  }
+
+  .v0-desktop-btn-app {
+    background: var(--v0-secondary);
+    color: var(--v0-white);
+    border: none;
+    padding: 12px 28px;
+    border-radius: var(--v0-radius);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+  }
+
+  .v0-desktop-btn-app:hover {
+    background: #003D6B;
+    transform: translateY(-2px);
+    box-shadow: var(--v0-shadow);
+  }
+
+  /* ===== FEATURES STRIP ===== */
+  .v0-desktop-features-strip {
+    background: var(--v0-light);
+    padding: 80px 40px;
+  }
+
+  .v0-desktop-features-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .v0-desktop-feature-box {
+    background: var(--v0-white);
+    padding: 40px;
+    border-radius: var(--v0-radius);
+    text-align: center;
+    box-shadow: var(--v0-shadow);
+    transition: all 0.3s ease;
+  }
+
+  .v0-desktop-feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  .v0-desktop-feature-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .v0-desktop-feature-box h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--v0-dark);
+  }
+
+  .v0-desktop-feature-box p {
+    font-size: 14px;
+    color: var(--v0-gray);
+  }
+
+  /* ===== SECTIONS ===== */
+  .v0-desktop-services,
+  .v0-desktop-why-yatri,
+  .v0-desktop-car-fare-table,
+  .v0-desktop-journey-section,
+  .v0-desktop-rental-benefits,
+  .v0-desktop-why-one-way,
+  .v0-desktop-explore-section,
+  .v0-desktop-travel-options,
+  .v0-desktop-testimonials,
+  .v0-desktop-app-download {
+    padding: 80px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .v0-desktop-section-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--v0-dark);
+  }
+
+  /* ===== SERVICES GRID ===== */
+  .v0-desktop-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .v0-desktop-service-card {
+    background: var(--v0-light);
+    padding: 40px 30px;
+    border-radius: var(--v0-radius);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .v0-desktop-service-card:hover {
+    border-color: var(--v0-primary);
+    background: var(--v0-white);
+    box-shadow: var(--v0-shadow);
+  }
+
+  .v0-desktop-card-icon {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .v0-desktop-service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--v0-dark);
+  }
+
+  .v0-desktop-service-card p {
+    font-size: 14px;
+    color: var(--v0-gray);
+  }
+
+  /* ===== WHY YATRI ===== */
+  .v0-desktop-why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+  }
+
+  .v0-desktop-why-item {
+    padding: 40px;
+  }
+
+  .v0-desktop-why-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--v0-primary);
+    margin-bottom: 16px;
+  }
+
+  .v0-desktop-why-item h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--v0-dark);
+  }
+
+  .v0-desktop-why-item p {
+    font-size: 15px;
+    color: var(--v0-gray);
+  }
+
+  /* ===== CAR FARE ===== */
+  .v0-desktop-fare-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .v0-desktop-fare-card {
+    background: var(--v0-white);
+    border: 2px solid var(--v0-light);
+    padding: 40px 30px;
+    border-radius: var(--v0-radius);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .v0-desktop-fare-card:hover {
+    border-color: var(--v0-primary);
+    box-shadow: var(--v0-shadow);
+    transform: translateY(-6px);
+  }
+
+  .v0-desktop-fare-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .v0-desktop-fare-card h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: var(--v0-dark);
+  }
+
+  .v0-desktop-fare-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--v0-primary);
+    margin-bottom: 8px;
+  }
+
+  .v0-desktop-fare-desc {
+    font-size: 14px;
+    color: var(--v0-gray);
+    margin-bottom: 24px;
+  }
+
+  /* ===== JOURNEY STEPS ===== */
+  .v0-desktop-steps-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .v0-desktop-step {
+    text-align: center;
+    flex: 0 0 200px;
+  }
+
+  .v0-desktop-step-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--v0-primary);
+    color: var(--v0-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 auto 16px;
+  }
+
+  .v0-desktop-step h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--v0-dark);
+  }
+
+  .v0-desktop-step p {
+    font-size: 14px;
+    color: var(--v0-gray);
+  }
+
+  .v0-desktop-step-arrow {
+    font-size: 24px;
+    color: var(--v0-primary);
+    font-weight: 700;
+  }
+
+  /* ===== RENTAL BENEFITS ===== */
+  .v0-desktop-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .v0-desktop-benefit-card {
+    background: linear-gradient(135deg, var(--v0-secondary) 0%, #0066B3 100%);
+    color: var(--v0-white);
+    padding: 30px;
+    border-radius: var(--v0-radius);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .v0-desktop-benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,78,137,0.2);
+  }
+
+  .v0-desktop-benefit-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .v0-desktop-benefit-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .v0-desktop-benefit-card p {
+    font-size: 13px;
+    opacity: 0.9;
+  }
+
+  /* ===== ONE-WAY ===== */
+  .v0-desktop-oneway-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .v0-desktop-oneway-container p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: var(--v0-gray);
+  }
+
+  .v0-desktop-benefits-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .v0-desktop-benefits-list li {
+    padding-left: 30px;
+    position: relative;
+    font-size: 16px;
+    color: var(--v0-dark);
+  }
+
+  .v0-desktop-benefits-list li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--v0-primary);
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  /* ===== EXPLORE CITIES ===== */
+  .v0-desktop-cities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .v0-desktop-city-card {
+    background: var(--v0-light);
+    padding: 40px 30px;
+    border-radius: var(--v0-radius);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .v0-desktop-city-card:hover {
+    border-color: var(--v0-primary);
+    background: var(--v0-white);
+    box-shadow: var(--v0-shadow);
+  }
+
+  .v0-desktop-city-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--v0-dark);
+    margin-bottom: 8px;
+  }
+
+  .v0-desktop-city-card p {
+    font-size: 14px;
+    color: var(--v0-gray);
+    margin-bottom: 20px;
+  }
+
+  /* ===== TRAVEL OPTIONS ===== */
+  .v0-desktop-options-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .v0-desktop-option-card {
+    background: var(--v0-white);
+    border: 2px solid var(--v0-light);
+    padding: 40px 30px;
+    border-radius: var(--v0-radius);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .v0-desktop-option-card:hover {
+    border-color: var(--v0-primary);
+    box-shadow: var(--v0-shadow);
+    transform: translateY(-6px);
+  }
+
+  .v0-desktop-option-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .v0-desktop-option-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--v0-dark);
+  }
+
+  .v0-desktop-option-card p {
+    font-size: 14px;
+    color: var(--v0-gray);
+    margin-bottom: 20px;
+  }
+
+  .v0-desktop-option-link {
+    color: var(--v0-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .v0-desktop-option-link:hover {
+    color: #E55A2B;
+  }
+
+  /* ===== TESTIMONIALS ===== */
+  .v0-desktop-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .v0-desktop-testimonial-card {
+    background: var(--v0-light);
+    padding: 40px 30px;
+    border-radius: var(--v0-radius);
+    text-align: center;
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--v0-primary);
+  }
+
+  .v0-desktop-testimonial-card:hover {
+    box-shadow: var(--v0-shadow);
+    transform: translateY(-4px);
+  }
+
+  .v0-desktop-testimonial-stars {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .v0-desktop-testimonial-text {
+    font-size: 15px;
+    color: var(--v0-dark);
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+
+  .v0-desktop-testimonial-author {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--v0-gray);
+  }
+
+  /* ===== APP DOWNLOAD ===== */
+  .v0-desktop-app-download {
+    background: linear-gradient(135deg, var(--v0-secondary) 0%, #0066B3 100%);
+    color: var(--v0-white);
+  }
+
+  .v0-desktop-app-download .v0-desktop-section-title {
+    color: var(--v0-white);
+  }
+
+  .v0-desktop-app-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .v0-desktop-app-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+  }
+
+  .v0-desktop-app-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .v0-desktop-app-feature {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px;
+  }
+
+  .v0-desktop-app-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  /* ===== FOOTER ===== */
+  .v0-desktop-footer {
+    background: var(--v0-dark);
+    color: var(--v0-light);
+    padding: 60px 40px 20px;
+  }
+
+  .v0-desktop-footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .v0-desktop-footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--v0-white);
+  }
+
+  .v0-desktop-footer-column p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+
+  .v0-desktop-footer-column ul {
+    list-style: none;
+  }
+
+  .v0-desktop-footer-column li {
+    margin-bottom: 10px;
+  }
+
+  .v0-desktop-footer-column a {
+    color: var(--v0-light);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+
+  .v0-desktop-footer-column a:hover {
+    color: var(--v0-primary);
+  }
+
+  .v0-desktop-social-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .v0-desktop-social-links a {
+    display: inline-block;
+    padding: 8px 0;
+  }
+
+  .v0-desktop-footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+}
+
+/* Hide below 1200px */
+@media (max-width: 1199px) {
+  .v0-desktop-navbar,
+  .v0-desktop-hero,
+  .v0-desktop-features-strip,
+  .v0-desktop-services,
+  .v0-desktop-why-yatri,
+  .v0-desktop-car-fare-table,
+  .v0-desktop-journey-section,
+  .v0-desktop-rental-benefits,
+  .v0-desktop-why-one-way,
+  .v0-desktop-explore-section,
+  .v0-desktop-travel-options,
+  .v0-desktop-testimonials,
+  .v0-desktop-app-download,
+  .v0-desktop-footer {
+    display: none;
+  }
+}
